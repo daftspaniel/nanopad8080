@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style/style.css">
+    <script src="lib/gui.js"></script>
+    <script src="lib/data.js"></script>
+    <script src="lib/stringprocess.js"></script>
+    <script src="app/editor.js"></script>
+    <script src="app/app.js"></script>
+    <script src="app/main.js"></script>
+</head>
+
+<body onload="start()">
+<div id="menu1"
+     class="menu"
+     onclick="showDialog()"
+     onmouseleave="app.startMenu.menushrink()">
+    Start
+    <div>Clear</div>
+    <div>Welcome Text</div>
+    <div>Markdown</div>
+</div>
+<textarea id="editor1" class="editor" onkeyup="app.editor.onKeyUp()"></textarea>
+<div id="dialog" onclick="hideDialog()">I am a dialog</div>
+<div id="statusbar">I am a status area</div>
+</body>
+
+</html>
