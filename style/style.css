@@ -1,47 +1,48 @@
-/* Styles go here */
-
-body{
-  background-color:black;
-  height:100%;
-  font-family: Courier New,Courier,Lucida Sans Typewriter,Lucida Typewriter,monospace; 
+body {
+    background-color: black;
+    height: 100%;
+    font-family: Courier New, Courier, Lucida Sans Typewriter, Lucida Typewriter, monospace;
+    overflow: hidden;
 }
 
-.editor{
-  background-color:black; 
-  color:lightgreen;
-  height:calc(100vh - 90px);
-  width:100%;
-  margin-top:30px;
+.editor {
+    background-color: black;
+    color: lightgreen;
+    height: calc(100vh - 70px);
+    width: calc(100% - 10px);
+    margin-top: 30px;
+    resize: none;
+    border-color: chartreuse;
 }
 
-#dialog{
-  position:absolute;
-  top:25px;
-  left:100px;
-  display:none;
-  background-color:blue;
-  width:400px;
-  height:300px;
+#dialog {
+    position: absolute;
+    top: 25px;
+    left: 100px;
+    display: none;
+    background-color: blue;
+    width: 400px;
+    height: 300px;
 }
 
-.menu{
-  position:absolute;
-  background-color:black; 
-  border: 2px solid lightgreen;
-  color:lightgreen;
-  height:14px;
-  overflow:hidden;
-  border-radius:6px;
-  padding:5px;
-  text-align:center;
+.menu {
+    position: absolute;
+    background-color: black;
+    border: 2px solid lightgreen;
+    color: lightgreen;
+    height: 14px;
+    overflow: hidden;
+    border-radius: 6px;
+    padding: 5px;
+    text-align: center;
 }
 
 #statusbar {
-  position:absolute;
-  background-color:black;
-  color:lightgreen;
-  width:100%;
-  padding:0px;
-  margin-top:0px;
-  
+    position: absolute;
+    background-color: black;
+    color: lightgreen;
+    width: 100%;
+    padding: 0;
+    margin-top: 0;
+
 }
