@@ -3,10 +3,17 @@
 class Editor extends Widget {
     constructor(id) {
         super(id);
-        this.boundDate = new BoundData();
+        this.boundData = new BoundData();
     }
 
     onKeyUp() {
+    }
 
+    setup() {
+        this.control().addEventListener('keyup', this.changeHandler);
+    }
+
+    changeHandler() {
+        console.log('CHANGE!', super.control().value);
     }
 }

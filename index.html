@@ -3,7 +3,8 @@
 
 <head>
     <link rel="stylesheet" href="style/style.css">
-    <script src="lib/gui.js"></script>
+    <script src="lib/gui/gui.js"></script>
+    <script src="lib/gui/menu.js"></script>
     <script src="lib/data.js"></script>
     <script src="lib/storage.js"></script>
     <script src="lib/stringprocess.js"></script>
@@ -14,15 +15,13 @@
 
 <body onload="start()">
 <div id="menu1"
-     class="menu"
-     onclick="showDialog()"
-     onmouseleave="app.startMenu.menushrink()">
+     class="menu">
     Start
-    <div>Clear</div>
+    <div id="clear">Clear</div>
     <div>Welcome Text</div>
     <div>Markdown</div>
 </div>
-<textarea id="editor1" class="editor" onkeyup="app.editor.onKeyUp()"></textarea>
+<textarea id="editor1" class="editor theme-border" onkeyup="app.editor.onKeyUp()"></textarea>
 <div id="dialog">I am a dialog</div>
 <div id="statusbar">I am a status area</div>
 </body>

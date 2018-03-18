@@ -5,14 +5,17 @@ body {
     overflow: hidden;
 }
 
-.editor {
+.theme-border{
     background-color: black;
     color: lightgreen;
+    border-color: chartreuse;
+}
+
+.editor {
     height: calc(100vh - 70px);
     width: calc(100% - 10px);
     margin-top: 30px;
     resize: none;
-    border-color: chartreuse;
 }
 
 #dialog {
