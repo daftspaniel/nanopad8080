@@ -14,18 +14,17 @@ class Notepad {
 
     setupGUI() {
         this.gui.forEach(function (ctrl) {
-            console.log(ctrl);
             ctrl.setup();
         });
+        this.editor.focus();
     }
 
     init() {
         this.setupGUI();
-        this.update();
     }
 
     update() {
-        this.statusPanel.update();
+
     }
 }
 

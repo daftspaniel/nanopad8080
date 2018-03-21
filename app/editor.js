@@ -14,6 +14,6 @@ class Editor extends Widget {
     }
 
     changeHandler() {
-        console.log('CHANGE!', super.control().value);
+        msgBus.post('TEXT_CHANGE', super.control().value)
     }
 }

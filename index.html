@@ -3,6 +3,7 @@
 
 <head>
     <link rel="stylesheet" href="style/style.css">
+    <script src="lib/minibus/minibus.js"></script>
     <script src="lib/gui/gui.js"></script>
     <script src="lib/gui/menu.js"></script>
     <script src="lib/data.js"></script>
@@ -21,7 +22,7 @@
     <div>Welcome Text</div>
     <div>Markdown</div>
 </div>
-<textarea id="editor1" class="editor theme-border" onkeyup="app.editor.onKeyUp()"></textarea>
+<textarea id="editor1" class="editor theme-border" onkeyup="app.editor.onKeyUp()" tabindex="1"></textarea>
 <div id="dialog">I am a dialog</div>
 <div id="statusbar">I am a status area</div>
 </body>
