@@ -14,6 +14,8 @@ class Editor extends Widget {
     }
 
     changeHandler() {
-        msgBus.post('TEXT_CHANGE', super.control().value)
+        let value = super.control().value;
+        msgBus.post('TEXT_CHANGE', value);
+        storage.storeValue('note', value);
     }
 }

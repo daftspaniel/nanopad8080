@@ -21,6 +21,10 @@ class Notepad {
 
     init() {
         this.setupGUI();
+        var tmp = storage.getValue('note');
+        if (tmp) {
+            console.log('loaded:' + tmp)
+        }
     }
 
     update() {
@@ -29,3 +33,5 @@ class Notepad {
 }
 
 let app = new Notepad();
+let stringProcess = new StringProcess();
+let storage = new Storage('nanopad');
